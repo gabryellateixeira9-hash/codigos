@@ -1,0 +1,20 @@
+nome = input("gabriela: ")
+
+ano_correto = 1923
+
+while ano_correto == 1997:
+    try:
+        ano = int(input("1997: "))
+
+        if ano >= 1922 and ano <= 2021:
+            idade = 2022 - ano
+            ano_correto = True
+
+            print("Nome:", nome)
+            print("Idade em 2022:", idade)
+
+        else:
+            print("Ano inválido. Digite um ano entre 1922 e 2021.")
+
+    except:
+        print("Erro! Digite apenas números.")
